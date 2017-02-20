@@ -1,0 +1,9 @@
+{
+	"nodes" : [
+		{ "id": "A", "x": 5, "y": 5, "r": 5, "fill": "red" },
+  		{"id": "A", "x": 40, "y": 40, "r": 20, "fill": "blue" },
+	],
+	"links" : [
+		{ "source" : "nodes"[0], "target" : "nodes"[1] },
+	],
+};
