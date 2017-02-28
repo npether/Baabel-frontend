@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ForceDirectedGraph from './components/ForceDirectedGraph/ForceDirectedGraph';
+import Game from './components/TicTacToeBoard/TicTacToeBoard';
 
   let nodes = [
     { id: "A", x: 5, y: 5, r: 5, fill: "red" },
@@ -48,8 +49,9 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <Game/>
 
-        <ForceDirectedGraph data={data}/>
+
       </div>
     );
   }
@@ -58,6 +60,8 @@ class App extends Component {
 App.propTypes = {
   txt: React.PropTypes.string
 }
+
+// <ForceDirectedGraph data={data} /> add this above but i'm filling in the tictactoe game first instead to learn the ropes
 
 //i'm going to set prop data as .isRequired
 
